@@ -9,11 +9,13 @@
 _Для запуска бота в Телеграме необходимо зарегистрировать его у @botfather и получить токен_
 1. Склонировать репозиторий на свой компьютер
 2. Установить библиотеки, указанные в файле requirements.txt (команда pip install -r requirements.txt)
-3. Создать файл config.py со следующими параметрами: 
-> RAPID_API_KEY = '9de5c942bcmsh74aeb04b0ecaab3p15874fjsnc63c563d6626'
+3. Зарегистрироваться на сайте: https://rapidapi.com/traveltables/api/cost-of-living-and-prices
+4. Скопировать API-ключ из строки "X-RapidAPI-Key": "ваш_ключ"
+5. Создать файл config.py со следующими параметрами: 
+> RAPID_API_KEY = 'ваш_ключ'
 
 > BOT_TOKEN = 'ваш токен из botfather'
-4. Запустить бота через терминал из папки с файлом main_bot.py (команда python main_bot.py)
+6. Запустить бота через терминал из папки с файлом main_bot.py (команда python main_bot.py)
 
 ## Архитектура бота 
 Бот основан на данных сайта TravelTables.com. Подключение реализовано по API с помощью https://rapidapi.com/traveltables/api/cost-of-living-and-prices
